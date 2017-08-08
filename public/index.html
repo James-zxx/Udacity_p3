@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>地图搜索</title>
+  <meta name="msapplication-tap-highlight" content="no"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+  <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+  <script src="http://webapi.amap.com/maps?v=1.3&key=8a30000fcff85dc576ab042c2d3e01f0"></script>
+  <script src="https://webapi.amap.com/ui/1.0/main.js"></script>
+
+
+
+</head>
+<body>
+
+<div id="console">
+zhanglei
+
+</div>
+
+<nav id="main-nav" class="navigation overflow">
+  <ul >
+    <li><input type="text" class="input-map-name"><button class="search-button" data-bind="click: searchMapName">搜索</button></li>
+    <ul data-bind="foreach: mapsList" id="my-list">
+      <li data-bind="event:{click:$parent.showLocaltion.bind($data)}" class="amap-ui-markerlist-list-ele"><a href="#" data-bind="text:$data.name" class="li-detail"></a></li>
+
+    </ul>
+  </ul>
+</nav>
+
+<div id="containers" style="width: 100%;height: 100%">
+
+  <header class="primary">
+    <span class="open icon">&#9776;</span>
+  </header>
+  <section id="scroller" class="overflow">
+    <div id="content">
+      <div id="container"></div>
+    </div>
+
+  </section>
+
+
+</div>
+<script src="bundle.js"></script>
+<!--加载UI库-->
+<base href="//webapi.amap.com/ui/1.3/ui/misc/MarkerList/examples/"/>
+
+</body>
+</html>

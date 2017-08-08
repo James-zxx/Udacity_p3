@@ -1,0 +1,18 @@
+.search-button{
+    background-color: #1b6d85;
+    width: 20%;
+    height: 100%;
+    border: none !important;
+}
+.input-map-name{
+    width: 80%;
+    height: 100%;
+    color: #333333;
+}
+.selected{
+    background-color: #a6e1ec;
+}
+.selected a{
+    color: #333 !important;
+
+}
