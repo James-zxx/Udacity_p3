@@ -11,7 +11,7 @@
 	/*	Header
 	=========================== */
 	header.primary { height: 49px; color: #333; background-color: #232323; position: relative; border-bottom: solid 1px #f8f8f8; border-radius: 3px 3px 0 0;}
-	header.primary .icon { z-index: 22; position: absolute; top: 0; left: 0; height: 49px; width: 49px; font-size: 26px; line-height: 49px; text-align: center; color: #333; cursor: pointer;}
+	header.primary .icon { z-index: 1000; position: absolute; top: 0; left: 0; height: 49px; width: 49px; font-size: 26px; line-height: 49px; text-align: center; color: #333; cursor: pointer;}
 	header.primary .side { left: auto; right: 0; }
 	header.primary hgroup { text-align: center;width: 100%;height: 64px }
 	header.primary hgroup h1 { z-index: 20; position: absolute; top: 0; left: 50px; right: 50px; color:#333; margin: 0; line-height: 49px; margin: 0; font-size: 20px; width: 100%;height: 64px}

@@ -9,10 +9,10 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
-  <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
-  <script src="http://webapi.amap.com/maps?v=1.3&key=8a30000fcff85dc576ab042c2d3e01f0"></script>
-  <script src="https://webapi.amap.com/ui/1.0/main.js"></script>
+  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
+  <script src="http://cache.amap.com/lbs/static/es5.min.js" onerror="mapErrorHandler()"></script>
+  <script src="http://webapi.amap.com/maps?v=1.3&key=8a30000fcff85dc576ab042c2d3e01f0" onerror="mapErrorHandler()"></script>
+  <script src="https://webapi.amap.com/ui/1.0/main.js" onerror="mapErrorHandler()"></script>
 
 
 
@@ -26,7 +26,7 @@ zhanglei
 
 <nav id="main-nav" class="navigation overflow">
   <ul >
-    <li><input type="text" class="input-map-name"><button class="search-button" data-bind="click: searchMapName">搜索</button></li>
+    <li><input type="text" data-bind="textInput: placeName" class="input-map-name" placeholder="请输入"><button class="search-button" data-bind="click: searchMapName">搜索</button></li>
     <ul data-bind="foreach: mapsList" id="my-list">
       <li data-bind="event:{click:$parent.showLocaltion.bind($data)}" class="amap-ui-markerlist-list-ele"><a href="#" data-bind="text:$data.name" class="li-detail"></a></li>
 
